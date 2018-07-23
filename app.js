@@ -4,14 +4,11 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
-var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
 const importRouter = require('./routes/import');
 const ejs = require("ejs");
 
 var app = express();
 
-app.locals.constsjs = require('./routes/consts');
 app.locals.title = "my title";
 
 // view engine setup
