@@ -8,15 +8,15 @@ const multiparty = require('multiparty');
 // sheet name:ServiceCharges
 const SHEET_INDEX = 2;
 
-const HOTELCODE_COLINDEX = 0;
-const STARTDATE_COLINDEX = 12;
-const ENDDATE_COLINDEX = 13;
-const TAXABLE_COLINDEX = 14;
-const AMOUNT_COLINDEX = 15;
-const TYPE_COLINDEX = 16;
-const BASIS_COLINDEX = 17;
-const PERIOD_COLINDEX = 18;
-const DESC_COLINDEX = 19;
+const HOTELCODE_COLINDEX = 1;
+const STARTDATE_COLINDEX = 13;
+const ENDDATE_COLINDEX = 14;
+const TAXABLE_COLINDEX = 15;
+const AMOUNT_COLINDEX = 16;
+const TYPE_COLINDEX = 17;
+const BASIS_COLINDEX = 18;
+const PERIOD_COLINDEX = 19;
+const DESC_COLINDEX = 20;
 
 let sql = "";
 
