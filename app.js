@@ -5,6 +5,7 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
 const importRouter = require('./routes/import');
+const createRateRuleRouter = require('./routes/createRateRule');
 const ejs = require("ejs");
 
 var app = express();
@@ -29,6 +30,7 @@ app.route("/users").all(function (req,res,next) {
 // app.use('/', indexRouter);
 // app.use('/users', usersRouter);
 app.use('/import', importRouter);
+app.use('/createRateRule', createRateRuleRouter);
 
 app.param('id', function(req, res, next, id) {
     console.log('CALLED ONLY ONCE');
