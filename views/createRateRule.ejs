@@ -8,8 +8,23 @@
     <title></title>
 </head>
 <body>
-<form method="post" action="/createRateRule/createFile">
+<form method="post" action="/createRateRule/createFileSingleCountry">
+    -----------------------------------------------------------
+    <br>
+    一个国家一个rate
+    <br>
     country codes (逗号分隔)<input type="text" name="countryCodes"/>
+    rate rule id 前缀<input type="text" name="prefix"/>
+    <input type="submit" value="生成rate rule">
+</form>
+<br>
+<form method="post" action="/createRateRule/createFileCountry">
+    -----------------------------------------------------------
+    <br>
+    多个国家一个rate
+    <br>
+    country codes (逗号分隔)<input type="text" name="countryCodes"/>
+    market<input type="text" name="market"/>
     rate rule id 前缀<input type="text" name="prefix"/>
     <input type="submit" value="生成rate rule">
 </form>
